@@ -1,15 +1,17 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Http\Request;
 
 
 class ProfileController extends Controller
 {
-    public function index($id)
+    public function index(Request $request)
     {
 
         $name = "Donal Trump";
         $age = "75";
+        $id = $request->id;
 
         $data = [
             "id" => $id,
